@@ -6,6 +6,10 @@
     font-size: 1rem;
 }
 
+body{
+    background-color: #F2F7FF;
+}
+
 /* .text1 {
 
 } */
@@ -30,6 +34,11 @@
     background: linear-gradient(96.14deg, #3A8EF6 -10.84%, #6F3AFA 196.74%);
     box-shadow: 0px 8px 23px rgba(65, 132, 247, 0.24);
     border-radius: 100px;
+}
+
+.btn-secondary {
+    background-color: #6C87AE !important;
+    border-radius: 30px !important;
 }
 
 .title {

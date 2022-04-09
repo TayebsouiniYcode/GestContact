@@ -8,7 +8,7 @@
     <div class="illustration mt-5 d-flex justify-content-center">
         <img src="../../assets/img/illustration/login.svg" alt="" width="300" height="200">
     </div>
-    <form class="mt-4" action="">
+    <form class="mt-4" action="./profil.php">
         <div class="form-group">
             <label for="username" class="form-label text2 fw-bold">Username</label>
             <label class="ml-auto">Need an account?<a href="./signup.php">Sign up</a> </label>
