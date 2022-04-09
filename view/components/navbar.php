@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container">
-    <a class="navbar-brand" href="./index.php">GestContact</a>
+    <a class="navbar-brand fw-bold fs-3" href="./index.php">GestContact</a>
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button> -->
     <div class="nav-item ms-auto">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+    </button> -->
+      <!-- <div class="collapse navbar-collapse fs-4 fw-" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Alex</a>
@@ -20,8 +20,8 @@
             <a class="nav-link link-light" href="#">Lougout</a>
           </li>
         </ul>
-      </div>
-
+      </div> -->
+      <a class="fw-bold fs-3 nav-link " href="#">Login</a>
     </div>
   </div>
 </nav>

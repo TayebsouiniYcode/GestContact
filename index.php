@@ -1,15 +1,23 @@
-<?php include_once "./view/components/header.php";?>
-<div class="container bg-light p-5">
-    <h1 class="title p-5 ps-0">
-        Hello !
-    </h1>
-    <p class="p-2">
-        <a href="#">Sign up</a> 
-        to start creating your contacts list.
-    </p>
-    <p class="p-2">
-        Already have an account? <a href="#">Login here.</a>
-    </p>
-</div>
+<?php  
+    $cssLink = "./assets/css/style.css";
+    include_once "./view/components/header.php";
+?>
+
+<main>
+    <div class="illustration mt-5 d-flex justify-content-center">
+        <img src="./assets/img/illustration/illustration-index.svg" alt="" width="300" height="200">
+    </div>
+    <div class="content mt-5">
+        <h1 class="title fw-bold">
+            GestContact, web application pour la gestion des contacts
+        </h1>
+        <p class="description fs-6 fw-bolder mt-3">
+            GestContact est une application web pour la gestion des contacts privée, sécurisée et gratuite.
+        </p>
+        <div class="button mt-4">
+            <a href="#" class="btn btn-primary fw-bold">login</a>
+        </div>
+    </div>
+</main>
 
 <?php include_once "./view/components/footer.php";?>
