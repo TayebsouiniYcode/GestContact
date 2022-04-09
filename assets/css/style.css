@@ -6,6 +6,24 @@
     font-size: 1rem;
 }
 
+/* .text1 {
+
+} */
+.text2 {
+    color: #6C87AE;
+}
+/* .bg-1 {
+
+} */
+.bg-2{
+    background-color: #6C87AE;
+    color: white;
+}
+
+::placeholder {
+    color: white !important;
+}
+
 .btn-primary {
     color: white;
     padding: 16px 28px;

@@ -1,9 +1,10 @@
-<?php  
+<?php
     $cssLink = "./assets/css/style.css";
+    $indexLink = "./index.php";
     include_once "./view/components/header.php";
 ?>
 
-<main>
+<main class="">
     <div class="illustration mt-5 d-flex justify-content-center">
         <img src="./assets/img/illustration/illustration-index.svg" alt="" width="300" height="200">
     </div>
@@ -15,7 +16,7 @@
             GestContact est une application web pour la gestion des contacts privée, sécurisée et gratuite.
         </p>
         <div class="button mt-4">
-            <a href="#" class="btn btn-primary fw-bold">login</a>
+            <a href="./view/account/login.php" class="btn btn-primary fw-bold">login</a>
         </div>
     </div>
 </main>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container">
-    <a class="navbar-brand fw-bold fs-3" href="./index.php">GestContact</a>
+    <a class="navbar-brand fw-bold fs-3" href="<?php echo $indexLink; ?>">GestContact</a>
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button> -->
