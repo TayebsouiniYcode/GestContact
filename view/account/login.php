@@ -11,7 +11,7 @@
     <form class="mt-4" action="">
         <div class="form-group">
             <label for="username" class="form-label text2 fw-bold">Username</label>
-            <label class="ml-auto">Need an account?<a href="#">Sign up</a> </label>
+            <label class="ml-auto">Need an account?<a href="./signup.php">Sign up</a> </label>
             <input type="text" name="username" id="username" class="form-control bg-2" placeholder="Username">
         </div>
         <div class="form-group mt-3">
