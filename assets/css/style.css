@@ -28,6 +28,17 @@ body{
     color: white !important;
 }
 
+.btn-modal {
+    padding: 6px 16px;
+    background: #1678F2 !important;
+    border-radius: 8px;
+    color: white;
+}
+
+.btn-light {
+    padding: 6px 16px !important; 
+}
+
 .btn-primary {
     color: white;
     padding: 16px 28px;
