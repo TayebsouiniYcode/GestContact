@@ -5,7 +5,7 @@
 ?>
 
 <main>
-<div class="illustration mt-5 d-flex justify-content-center">
+    <div class="illustration mt-5 d-flex justify-content-center">
         <img src="../../assets/img/illustration/signup.svg" alt="" width="300" height="200">
     </div>
     <form class="mt-4" action="./profil.php">

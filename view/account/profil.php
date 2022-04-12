@@ -9,7 +9,7 @@
         <img src="../../assets/img/illustration/profile.svg" alt="" width="300" height="200">
     </div>
     <div class="mt-5">
-        <button class="btn btn-primary fw-bold w-100">Contact list</button>
+        <a href="./contacts.php" class="btn btn-primary fw-bold w-100">Contact list</a>
     </div>
     <div>
         <button type="button" data-bs-toggle="modal" data-bs-target="#detailsModal" class="btn btn-secondary fw-bold w-100 mt-5">Details</button>
