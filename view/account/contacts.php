@@ -173,7 +173,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-light btn-modal w-100" data-bs-dismiss="modal">Edit</button>
-        <button type="button" class="btn btn-light w-100 bg-danger" data-bs-dismiss="modal">Delete</button>
+        <button type="button" class="btn btn-light w-100 bg-danger text-light" data-bs-dismiss="modal">Delete</button>
       </div>
     </div>
   </div>
