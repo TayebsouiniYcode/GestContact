@@ -24,15 +24,30 @@ body{
     color: white;
 }
 
+.bg-list {
+    background-color: #6c87ae83;
+}
+
+.text-blue {
+    color: #1678F2 !important;
+}
 ::placeholder {
     color: white !important;
 }
 
+.modalInput {
+    background: rgba(123,151,206,0.06);
+    border: 1px solid #1678F2
+    ;
+
+
+}
 .btn-modal {
     padding: 6px 16px;
     background: #1678F2 !important;
-    border-radius: 8px;
+    border-radius: 5px;
     color: white;
+    box-shadow: 0px 8px 23px rgba(65, 132, 247, 0.24);
 }
 
 .btn-light {
@@ -61,4 +76,15 @@ body{
 
 .description {
     color: #6C87AE;
+}
+
+.border-radius {
+    margin: 2rem;
+}
+
+.border-radius > th{
+    border-radius:30px 0px 0px 30px;
+}
+.border-radius > td{
+    border-radius:0px 30px 30px 0px;
 }
