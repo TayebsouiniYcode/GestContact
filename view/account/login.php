@@ -1,22 +1,22 @@
 <?php 
     $cssLink = "../../assets/css/style.css";
     $indexLink = "../../index.php";
+    $loginLink = "#";
     include_once "../components/header.php"; 
 ?>
 
-<main>
-    <div class="illustration mt-5 d-flex justify-content-center">
-        <img src="../../assets/img/illustration/login.svg" alt="" width="300" height="200">
+<main class="d-lg-flex flex-row-reverse mt-5 mt-lg-0 pt-xl-5 gap-5 vh-75 align-items-center">
+    <div class="illustration mt-5 mt-lg-0 d-flex justify-content-center">
+        <img class="lg-illustration" src="../../assets/img/illustration/login.svg" alt="" width="300" height="200">
     </div>
-    <form class="mt-4" action="./profil.php">
+    <form class="mt-4 mt-lg-0 w-100" action="./profil.php">
         <div class="form-group">
             <label for="username" class="form-label text2 fw-bold">Username</label>
-            <label class="ml-auto">Need an account?<a href="./signup.php">Sign up</a> </label>
-            <input type="text" name="username" id="username" class="form-control bg-2" placeholder="Username">
+            <input type="text" name="username" id="username" class="form-control lg-input modalInput" placeholder="Username">
         </div>
         <div class="form-group mt-3">
             <label for="password" class="form-label text2 fw-bold">Password</label>
-            <input type="password" name="password" id="password" class="form-control bg-2" placeholder="Password">
+            <input type="password" name="password" id="password" class="form-control lg-input modalInput" placeholder="Password">
         </div>
         <div class="form-group mt-4">
             <input class="btn btn-primary w-100 mt-2" type="submit" value="Login">
