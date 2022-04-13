@@ -44,6 +44,9 @@
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
                         </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
+                        </p>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -62,6 +65,9 @@
                         </p>
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
+                        </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
                     </td>
                 </tr>
@@ -82,6 +88,9 @@
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
                         </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
+                        </p>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -100,6 +109,9 @@
                         </p>
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
+                        </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
                     </td>
                 </tr>
@@ -120,6 +132,9 @@
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
                         </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
+                        </p>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -138,6 +153,9 @@
                         </p>
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
+                        </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
                     </td>
                 </tr>
@@ -158,6 +176,9 @@
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
                         </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
+                        </p>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -176,6 +197,9 @@
                         </p>
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
+                        </p>
+                        <p class="d-none d-lg-block fw-bold pt-3">
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
                     </td>
                 </tr>
@@ -196,43 +220,8 @@
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
                         </p>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
                         <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
-                            Tayebsouini@gmail.com
-                            <br>
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
                     </td>
                 </tr>
@@ -253,43 +242,8 @@
                         <p class="d-none d-lg-block fw-bold pt-3">
                             212 6 07 18 96 71
                         </p>
-                    </td>
-                </tr>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
-                            Tayebsouini@gmail.com
-                            <br>
-                            212 6 07 18 96 71
-                        </p>
                         <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
+                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
                     </td>
                 </tr>
@@ -363,9 +317,9 @@
         <span class="d-block fs-4">N° 1 rue sebtah Qu El Mohammadi Youssoufia</span>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-light btn-modal w-100" data-bs-dismiss="modal">Edit</button>
-        <button type="button" class="btn btn-light w-100 bg-danger text-light" data-bs-dismiss="modal">Delete</button>
+        <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-light btn-modal w-100 fw-bold" data-bs-dismiss="modal">Edit</button>
+        <button type="button" class="btn btn-light w-100 bg-danger text-light fw-bold" data-bs-dismiss="modal">Delete</button>
       </div>
     </div>
   </div>
@@ -403,8 +357,8 @@
                 </div>
                 <div class="form-group mt-4 row">
                     <div class="modal-footer">
-                        <button type="submit"  class="btn btn-light btn-modal w-100" data-bs-dismiss="modal">Save</button>
-                        <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold" data-bs-dismiss="modal">Save</button>
+                        <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
                         
                     </div>
                 </div>

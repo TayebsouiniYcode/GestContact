@@ -33,15 +33,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <span class="d-block">Username</span>
-        <span class="d-block">Alex</span>
-        <span class="d-block">Sign up date</span>
-        <span class="d-block">Sun, 07 Apr 2019 16:14:32 +0000</span>
-        <span class="d-block">Last login</span>
-        <span class="d-block">Mon, 06 Apr 2019 14:32:01 +0000</span>
+        <span class="d-block fs-3">Username</span>
+        <span class="d-block fs-3">Alex</span>
+        <span class="d-block fs-3">Sign up date</span>
+        <span class="d-block fs-3">Sun, 07 Apr 2019 16:14:32 +0000</span>
+        <span class="d-block fs-3">Last login</span>
+        <span class="d-block fs-3">Mon, 06 Apr 2019 14:32:01 +0000</span>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
       </div>
     </div>
   </div>
@@ -84,8 +84,8 @@
               </div>
             </div> -->
             <div class="modal-footer">
-              <input class="btn btn-light btn-modal w-100" data-bs-dismiss="modal" type="submit" value="confirm"> 
-              <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
+              <input class="btn btn-light btn-modal w-100 fw-bold" data-bs-dismiss="modal" type="submit" value="confirm"> 
+              <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
             </div>
           </div>
         </form>
