@@ -31,22 +31,27 @@
                     <th class="border-0">
                         <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
                     </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
+                    <td class="w-md-100 border-0 ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
+                            <p class="d-lg-none m-0">
+                                Tayebsouini@gmail.com
+                            </p>
+                            <p class="d-lg-none ">
+                                212 6 07 18 96 71
+                            </p>
+                        </div>
+                        <p class="d-none d-lg-block fw-bold m-0 ">
                             Tayebsouini@gmail.com
-                            <br>
+                        </p>
+                        <p class="d-none d-lg-block fw-bold m-0">
                             212 6 07 18 96 71
                         </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
+                        <p class="d-none d-lg-block fw-bold m-0">
                             N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
+                    </div>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -75,22 +80,27 @@
                     <th class="border-0">
                         <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
                     </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
+                    <td class="w-md-100 border-0 ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
+                            <p class="d-lg-none m-0">
+                                Tayebsouini@gmail.com
+                            </p>
+                            <p class="d-lg-none ">
+                                212 6 07 18 96 71
+                            </p>
+                        </div>
+                        <p class="d-none d-lg-block fw-bold m-0 ">
                             Tayebsouini@gmail.com
-                            <br>
+                        </p>
+                        <p class="d-none d-lg-block fw-bold m-0">
                             212 6 07 18 96 71
                         </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
+                        <p class="d-none d-lg-block fw-bold m-0">
                             N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
+                    </div>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -119,110 +129,27 @@
                     <th class="border-0">
                         <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
                     </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
+                    <td class="w-md-100 border-0 ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
+                            <p class="d-lg-none m-0">
+                                Tayebsouini@gmail.com
+                            </p>
+                            <p class="d-lg-none ">
+                                212 6 07 18 96 71
+                            </p>
+                        </div>
+                        <p class="d-none d-lg-block fw-bold m-0 ">
                             Tayebsouini@gmail.com
-                            <br>
+                        </p>
+                        <p class="d-none d-lg-block fw-bold m-0">
                             212 6 07 18 96 71
                         </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
+                        <p class="d-none d-lg-block fw-bold m-0">
                             N° 1 rue sebtah Qu El Mohammadi - Youssoufia
                         </p>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
-                            Tayebsouini@gmail.com
-                            <br>
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                        <p class="d-lg-none">
-                            Tayebsouini@gmail.com
-                            <br>
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
+                    </div>
                     </td>
                 </tr>
                 <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
@@ -265,7 +192,7 @@
           <p class="fs-2">
               Enter contact details and press confirm
           </p>
-            <form class="mt-4" action="./profil.php">
+            <form class="mt-4" action="./profil.php" name="addContact" onsubmit="return addContactVerify()">
                 <div class="form-group">
                     <label for="name" class="form-label text-blue fw-bold">Name</label>
                     <input type="text" name="name" id="name" class="form-control modalInput fw-bold" placeholder="name">
