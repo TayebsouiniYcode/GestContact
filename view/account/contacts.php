@@ -2,6 +2,7 @@
     $cssLink = "../../assets/css/style.css";
     $indexLink = "../../index.php";
     $loginLink = "void";
+    $script = "../../assets/js/validation.js";
     include_once '../components/header.php'; 
 
 ?>
@@ -192,26 +193,31 @@
           <p class="fs-2">
               Enter contact details and press confirm
           </p>
-            <form class="mt-4" action="./profil.php" name="addContact" onsubmit="return addContactVerify()">
+            <form class="mt-4" action="" name="addContact" onsubmit="return addContactVerify()">
                 <div class="form-group">
                     <label for="name" class="form-label text-blue fw-bold">Name</label>
                     <input type="text" name="name" id="name" class="form-control modalInput fw-bold" placeholder="name">
+                    <span class="text-danger" id="addContactNameMsg"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label for="phone" class="form-label text-blue fw-bold">Phone</label>
                     <input type="tel" name="phone" id="phone" class="form-control modalInput fw-bold" placeholder="Phone">
+                    <span class="text-danger" id="addContactPhoneMsg"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label for="email" class="form-label text-blue fw-bold">Email</label>
                     <input type="email" name="email" id="email" class="form-control modalInput fw-bold" placeholder="Email">
+                    <span class="text-danger" id="addContactEmailMsg"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label for="address" class="form-label text-blue fw-bold">Address</label>
                     <input type="text" name="address" id="address" class="form-control modalInput fw-bold" placeholder="Address">
+                    <span class="text-danger" id="addContactAddressMsg"></span>
                 </div>
                 <div class="form-group mt-4 row">
                     <div class="modal-footer">
-                        <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold" data-bs-dismiss="modal">Confirm</button>
+                        <!-- <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold" >Confirm</button> -->
+                        <input type="submit" class="btn btn-light btn-modal w-100 fw-bold" value="Confirm">
                         <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
@@ -265,26 +271,30 @@
           <p class="fs-3">
               Change contact details and press save
           </p>
-            <form class="mt-4" action="./profil.php">
+            <form class="mt-4" action="./profil.php" name="editContact" onsubmit="return editContactVerify()">
                 <div class="form-group">
                     <label for="name" class="form-label text-blue fw-bold">Name</label>
                     <input type="text" name="name" id="name" class="form-control modalInput fw-bold" value="Tayeb SOUINI">
+                    <span class="text-danger" id="editContactNameMsg"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label for="phone" class="form-label text-blue fw-bold">Phone</label>
                     <input type="tel" name="phone" id="phone" class="form-control modalInput fw-bold" value="+212 6 07 18 96 71">
+                    <span class="text-danger" id="editContactPhoneMsg"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label for="email" class="form-label text-blue fw-bold">Email</label>
                     <input type="email" name="email" id="email" class="form-control modalInput fw-bold" value="TayebSOUINI@gmail.com">
+                    <span class="text-danger" id="editContactEmailMsg"></span>
                 </div>
                 <div class="form-group mt-3">
                     <label for="address" class="form-label text-blue fw-bold">Address</label>
                     <input type="text" name="address" id="address" class="form-control modalInput fw-bold" value="N° 1 rue sebtah Qu El mohammadi Youssoufia">
+                    <span class="text-danger" id="editContactAddressMsg"></span>
                 </div>
                 <div class="form-group mt-4 row">
                     <div class="modal-footer">
-                        <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold" data-bs-dismiss="modal">Save</button>
+                        <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold">Save</button>
                         <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
                         
                     </div>

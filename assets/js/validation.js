@@ -1,3 +1,5 @@
+
+
 function signupVerify() {
     isValid = false;
 
@@ -68,5 +70,101 @@ function signupVerify() {
 } 
 
 function addContactVerify() {
+    let isValid = false;
+
     
+    
+    let addContactNameMsg = document.getElementById("addContactNameMsg");
+    let addContactAddressMsg = document.getElementById("addContactAddressMsg");
+    let addContactEmailMsg  = document.getElementById("addContactEmailMsg");
+    let addContactPhoneMsg  = document.getElementById("addContactPhoneMsg");
+    addContactNameMsg.innerText = "";
+    addContactAddressMsg.innerText = "";
+    addContactEmailMsg.innerText = "";
+    addContactPhoneMsg.innerText = "";
+    
+    let addContactForm = document.forms['addContact'];
+
+    let name = addContactForm['name'].value;
+    let phone = addContactForm['phone'].value;
+    let email = addContactForm['email'].value;
+    let address = addContactForm['address'].value;
+
+    let nameRegex = /^[a-zA-Z]{2,}$/;
+    let phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+    let emailRegex =  /^[a-zA-Z][A-Za-z0-9-_.]+@(gmail|outlook|yahoo).(com|fr|net)/;
+    let phoneMoroccoRegex = /(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/g;
+
+    // alert(name.match(nameRegex));
+
+    if (name.match(nameRegex) && phone.match(phoneRegex) && email.match(emailRegex) && address.length < 256){
+        isValid = true;
+    } else if (!name.match(nameRegex)) {
+        addContactNameMsg.innerText = "the name must be at least 2 characters";
+        addContactForm['name'].classList.add("invalid");
+        isValid = false;
+    } else if (!phone.match(phoneRegex)) {
+        addContactPhoneMsg.innerText = "number phone is not valid";
+        addContactForm['phone'].classList.add("invalid");
+        isValid = false;
+    } else if (!email.match(emailRegex)){
+        addContactEmailMsg.innerText = "Email is not valid";
+        addContactForm['email'].classList.add("invalid");
+        isValid = false;
+    }else if (address.length > 255) {
+        addContactAddressMsg.innerText = "Address is not valid (255 char MAX)";
+        addContactForm['address'].classList.add("invalid");
+        isValid = false;
+    }
+    return isValid;
+}
+
+function editContactVerify() {
+    let isValid = false;
+
+    
+    
+    let editContactNameMsg = document.getElementById("editContactNameMsg");
+    let editContactAddressMsg = document.getElementById("editContactAddressMsg");
+    let editContactEmailMsg  = document.getElementById("editContactEmailMsg");
+    let editContactPhoneMsg  = document.getElementById("editContactPhoneMsg");
+    editContactNameMsg.innerText = "";
+    editContactAddressMsg.innerText = "";
+    editContactEmailMsg.innerText = "";
+    editContactPhoneMsg.innerText = "";
+    
+    let editContactForm = document.forms['editContact'];
+
+    let name = editContactForm['name'].value;
+    let phone = editContactForm['phone'].value;
+    let email = editContactForm['email'].value;
+    let address = editContactForm['address'].value;
+
+    let nameRegex = /^[a-zA-Z]{2,}$/;
+    let phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+    let emailRegex =  /^[a-zA-Z][A-Za-z0-9-_.]+@(gmail|outlook|yahoo).(com|fr|net)/;
+    let phoneMoroccoRegex = /(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/g;
+
+    // alert(name.match(nameRegex));
+
+    if (name.match(nameRegex) && phone.match(phoneRegex) && email.match(emailRegex) && address.length < 256){
+        isValid = true;
+    } else if (!name.match(nameRegex)) {
+        editContactNameMsg.innerText = "the name must be at least 2 characters";
+        editContactForm['name'].classList.add("invalid");
+        isValid = false;
+    } else if (!phone.match(phoneRegex)) {
+        editContactPhoneMsg.innerText = "number phone is not valid";
+        editContactForm['phone'].classList.add("invalid");
+        isValid = false;
+    } else if (!email.match(emailRegex)){
+        editContactEmailMsg.innerText = "Email is not valid";
+        editContactForm['email'].classList.add("invalid");
+        isValid = false;
+    }else if (address.length > 255) {
+        editContactAddressMsg.innerText = "Address is not valid (255 char MAX)";
+        editContactForm['address'].classList.add("invalid");
+        isValid = false;
+    }
+    return isValid;
 }
