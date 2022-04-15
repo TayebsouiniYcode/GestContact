@@ -17,8 +17,6 @@ function signupVerify() {
     let password = form['password'].value;
     let passwordVerify = form['passwordVerify'].value;
 
-    
-
     let usernameRegex =   /^[a-z0-9_-]{3,15}$/;
     let passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
     //console.log(username + " " + password + " " + passwordVerify);
@@ -71,8 +69,6 @@ function signupVerify() {
 
 function addContactVerify() {
     let isValid = false;
-
-    
     
     let addContactNameMsg = document.getElementById("addContactNameMsg");
     let addContactAddressMsg = document.getElementById("addContactAddressMsg");
