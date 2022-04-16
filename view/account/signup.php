@@ -10,7 +10,7 @@
     <div class="illustration mt-5 mt-lg-0 d-flex justify-content-center">
         <img class="lg-illustration" src="../../assets/img/illustration/signup.svg" alt="" width="300" height="200">
     </div>
-    <form class="mt-4 mt-lg-0 w-100" action="./profil.php" name="signup" onsubmit="return signupVerify()">
+    <form class="mt-4 mt-lg-0 w-100" method="POST" action="../../script/signup.php" name="signup" onsubmit="return signupVerify()" >
         <div class="form-group">
             <label for="username" class="form-label text2 fw-bold">Username</label>
             <input type="text" name="username" id="username" class="form-control lg-input modalInput" placeholder="Username">
@@ -27,7 +27,7 @@
             <span class="text-danger" id="signupPasswordVerifyMsg"></span>
         </div>
         <div class="form-group mt-4">
-            <input class="btn btn-primary w-100 mt-2" type="submit" value="Sign up">
+            <input class="btn btn-primary w-100 mt-2" type="submit" name="submit" value="Sign up">
         </div>
     </form>
 </main>

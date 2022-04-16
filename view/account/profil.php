@@ -2,10 +2,14 @@
     $cssLink = "../../assets/css/style.css";
     $indexLink = "../../index.php";
     $loginLink = "void";
-    include_once '../components/header.php'; 
+    include_once '../components/header.php';
+    session_start();
+    // var_dump($_SESSION['signUpDate']->format('Y-m-d H:i:s'));
+    var_dump($_SESSION);
+    
 ?>
 <main class="mt-5">
-    <h1 class="title text-center fw-bolder">Welcome, Alex!</h1>
+    <h1 class="title text-center fw-bolder">Welcome, <?php echo $_SESSION['username'];?>!</h1>
     <div class="content d-lg-flex flex-row-reverse mt-5 mt-lg-0 pt-xl-4 gap-5 vh-75 align-items-center">
       <div class="illustration mt-5 mt-lg-0 d-flex justify-content-center">
           <img class="lg-illustration" src="../../assets/img/illustration/profile.svg" alt="" width="300" height="200">
@@ -34,11 +38,11 @@
       </div>
       <div class="modal-body">
         <span class="d-block fs-3">Username</span>
-        <span class="d-block fs-3">Alex</span>
+        <span class="d-block fs-3"><?php echo $_SESSION['username']; ?></span>
         <span class="d-block fs-3">Sign up date</span>
-        <span class="d-block fs-3">Sun, 07 Apr 2019 16:14:32 +0000</span>
+        <span class="d-block fs-3"><?php echo $_SESSION['signUpDate']->format('Y-m-d H:i:s') ?></span>
         <span class="d-block fs-3">Last login</span>
-        <span class="d-block fs-3">Mon, 06 Apr 2019 14:32:01 +0000</span>
+        <span class="d-block fs-3"><?php echo $_SESSION['lastLoginDate']->format('Y-m-d H:i:s') ?></span>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
