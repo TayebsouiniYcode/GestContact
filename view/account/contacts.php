@@ -5,6 +5,31 @@
     $script = "../../assets/js/validation.js";
     include_once '../components/header.php'; 
 
+    require "../../class/User.php";
+    session_start();
+
+    $user = new User($_SESSION['id'], $_SESSION['username'], $_SESSION['password'], $_SESSION['signupDate']);
+
+    $user->selectContact();
+    
+    // var_dump($user->getContactList());
+
+    
+
+
+    // var_dump($user);
+    // $c = new Contact(null, null, null, null, null, $user->getId());
+    // $data = $c->selectContact("*",$user->getId());
+    // for ($i = 0 ; $i < count($data); $i++){
+    //     $contact = new Contact($data[0]['Id'], $data[0]['Name'], $data[0]['Phone'], $data[0]['Email'], $data[0]['Address'], $user->getId());
+    //     $user->setContact($contact);
+    // }
+
+    // foreach($user->getContactList() as $c){
+    //     echo "<br>";
+    //     var_dump($c);
+    //     echo "<br>";
+    // }
 ?>
 
 <main class="mt-5 mt-lg-0 gap-5 vh-75 align-items-center">
@@ -28,159 +53,40 @@
                 </tr>
             </thead> -->
             <tbody>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 ">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                            <p class="d-lg-none m-0">
-                                Tayebsouini@gmail.com
+                <?php foreach($user->getContactList() as $c) : ?>
+                    <tr class="border-radius text-dark" >
+                        <th class="border-0">
+                            <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                        </th>
+                        <td class="w-md-100 border-0 ">
+                        <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h6 class="fs-5 fw-normal pt-3"><?php echo $c['Name']; ?></h6>
+                                <p class="d-lg-none m-0">
+                                    <?php echo $c['Email']; ?>
+                                </p>
+                                <p class="d-lg-none ">
+                                    <?php echo $c['Phone']; ?>
+                                </p>
+                            </div>
+                            <p class="d-none d-lg-block col-md-4 fs-6 pt-3 ">
+                                <?php echo $c['Email']; ?>
                             </p>
-                            <p class="d-lg-none ">
-                                212 6 07 18 96 71
+                            <p class="d-none d-lg-block col-md-2 fs-6 pt-3">
+                                <?php echo $c['Phone']; ?>
                             </p>
-                        </div>
-                        <p class="d-none d-lg-block fw-bold m-0 ">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold m-0">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold m-0">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </div>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 ">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                            <p class="d-lg-none m-0">
-                                Tayebsouini@gmail.com
-                            </p>
-                            <p class="d-lg-none ">
-                                212 6 07 18 96 71
+                            <p class="d-none d-lg-block col-md-4 fs-6 pt-3">
+                                <?php echo $c['Address']; ?>
                             </p>
                         </div>
-                        <p class="d-none d-lg-block fw-bold m-0 ">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold m-0">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold m-0">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </div>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </td>
-                </tr>
-                <tr class="border-radius bg-list text-dark" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 ">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h6 class="fw-bold pt-3">Tayeb SOUINI</h6>
-                            <p class="d-lg-none m-0">
-                                Tayebsouini@gmail.com
-                            </p>
-                            <p class="d-lg-none ">
-                                212 6 07 18 96 71
-                            </p>
-                        </div>
-                        <p class="d-none d-lg-block fw-bold m-0 ">
-                            Tayebsouini@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold m-0">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold m-0">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </div>
-                    </td>
-                </tr>
-                <tr class="border-radius border-0" data-bs-toggle="modal" data-bs-target="#detailsModal">
-                    <th class="border-0">
-                        <img src="../../assets/img/illustration/avatarTwo.svg" alt="" width="50">
-                    </th>
-                    <td class="w-md-100 border-0 w-md-100 border-0 d-lg-flex justify-content-between">
-                        <h6 class="fw-bold pt-3">Sanae Rafya</h6>
-                        <p class="d-lg-none">
-                            Sanaerafya@gmail.com
-                            <br>
-                            212 6 43 99 96 01
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            sanaerafya@gmail.com
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            212 6 07 18 96 71
-                        </p>
-                        <p class="d-none d-lg-block fw-bold pt-3">
-                            N° 1 rue sebtah Qu El Mohammadi - Youssoufia
-                        </p>
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>
 </main>
-
-
 
 <div class="modal" id="addModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -193,7 +99,7 @@
           <p class="fs-2">
               Enter contact details and press confirm
           </p>
-            <form class="mt-4" action="" name="addContact" onsubmit="return addContactVerify()">
+            <form class="mt-4" method="POST" action="../../script/addContact.php" name="addContact" onsubmit="return addContactVerify()">
                 <div class="form-group">
                     <label for="name" class="form-label text-blue fw-bold">Name</label>
                     <input type="text" name="name" id="name" class="form-control modalInput fw-bold" placeholder="name">
@@ -217,7 +123,7 @@
                 <div class="form-group mt-4 row">
                     <div class="modal-footer">
                         <!-- <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold" >Confirm</button> -->
-                        <input type="submit" class="btn btn-light btn-modal w-100 fw-bold" value="Confirm">
+                        <input type="submit" class="btn btn-light btn-modal w-100 fw-bold" name="confirm" value="Confirm">
                         <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
@@ -271,7 +177,8 @@
           <p class="fs-3">
               Change contact details and press save
           </p>
-            <form class="mt-4" action="./profil.php" name="editContact" onsubmit="return editContactVerify()">
+            <form class="mt-4" action="../../script/editContact.php" method="POST" name="editContact" onsubmit="return editContactVerify()">
+                <input type="text" name="id" value="0"> 
                 <div class="form-group">
                     <label for="name" class="form-label text-blue fw-bold">Name</label>
                     <input type="text" name="name" id="name" class="form-control modalInput fw-bold" value="Tayeb SOUINI">

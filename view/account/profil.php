@@ -4,12 +4,15 @@
     $loginLink = "void";
     include_once '../components/header.php';
     session_start();
+
+    // var_dump($_SESSION);
     // var_dump($_SESSION['signUpDate']->format('Y-m-d H:i:s'));
-    var_dump($_SESSION);
+    // var_dump($_SESSION['user']);
     
 ?>
 <main class="mt-5">
     <h1 class="title text-center fw-bolder">Welcome, <?php echo $_SESSION['username'];?>!</h1>
+    <a href="../../script/logout.php">logout</a>
     <div class="content d-lg-flex flex-row-reverse mt-5 mt-lg-0 pt-xl-4 gap-5 vh-75 align-items-center">
       <div class="illustration mt-5 mt-lg-0 d-flex justify-content-center">
           <img class="lg-illustration" src="../../assets/img/illustration/profile.svg" alt="" width="300" height="200">

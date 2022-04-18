@@ -23,6 +23,16 @@ class Database{
         }
     }
 
+    // public function __sleep()
+    // {
+    //     return array('connection');
+    // }
+
+    // public function __wakeup()
+    // {
+    //     $this->connection;
+    // }
+
     public function insert($table,$para=array()){
         $table_columns = implode(',', array_keys($para));
         $table_value = implode("','", $para);

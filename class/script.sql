@@ -6,3 +6,17 @@ CREATE TABLE IF NOT EXISTS `user` (
     `SignUpDate` date,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS `contact`;
+CREATE TABLE IF NOT EXISTS `contact` (
+  	`Id` int NOT NULL AUTO_INCREMENT,
+  	`Name` varchar(20) NOT NULL,
+   	`Phone` varchar(30) NULL UNIQUE,
+    `Email` varchar(50) NOT NULL UNIQUE,
+    `Address` varchar(255) NULL, 
+    `Id_User` int NOT NULL,
+  PRIMARY KEY (`Id`),
+    FOREIGN KEY (Id_User)
+        REFERENCES user(Id)
+        ON DELETE CASCADE
+) ENGINE=InnoDB;
