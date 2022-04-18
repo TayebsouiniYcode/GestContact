@@ -2,6 +2,7 @@
     $cssLink = "./assets/css/style.css";
     $indexLink = "./index.php";
     $loginLink = "./view/account/login.php";
+    $loginName = "Login";
     include_once "./view/components/header.php";
 ?>
 

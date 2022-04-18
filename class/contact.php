@@ -71,12 +71,12 @@ class Contact extends Database{
         }
     }
 
-    public function deleteContact(string $tableName, ?string $id){
-        $this->delete($tableName, $id);
+    public function deleteContact(){
+        $this->delete("contact", "Id = " . $this->id);
     }
 
-    public function updateContact(string $tableName, array $param, string $id){
-        $this->delete($tableName, ['Name'=>$this->name, "Phone"=> $this->phone, "Email"=> $this->email, "Address" => $this->address], $id);
+    public function updateContact(){
+        $this->update("contact", ['Name'=>$this->name, "Phone"=> $this->phone, "Email"=> $this->email, "Address" => $this->address], $this->id);
     }
 
     // $db->select("user","*");

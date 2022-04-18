@@ -21,7 +21,7 @@
           </li>
         </ul>
       </div> -->
-      <a class="fw-bold fs-3 nav-link " href="<?php echo $loginLink; ?>">Login</a>
+      <a class="fw-bold fs-3 nav-link " href="<?php echo $loginLink; ?>"><?php echo $loginName; ?></a>
     </div>
   </div>
 </nav>

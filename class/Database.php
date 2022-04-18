@@ -60,12 +60,9 @@ class Database{
 
         try{
             $this->connexion->query($sql);
-            echo "success update";
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
-
-        // $result = $this->mysqli->query($sql);
     }
 
 

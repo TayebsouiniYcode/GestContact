@@ -77,20 +77,13 @@ class User extends Database {
             $where = "Username = '$username' and Password = '$password'";
             $checkAccount = $this->select("User", "Id, Username, Password, SignUpDate", $where);
             if ($checkAccount) {
-                echo "welcome!";
-                // $date = strtotime($checkAccount[0]['SignUpDate']); 
-                // $date = date("Y-m-d H:i:s", $date);
-                // var_dump($date);
-
                 $u = new User($checkAccount[0]['Id'], $checkAccount[0]['Username'], $checkAccount[0]['Password'], $checkAccount[0]['SignUpDate'] );
                 return $u;
             } else {
-                echo "password incorrect";
-                return new User(null, $username, $password, null);
+                return new User(-1, $username, $password, null);
             }
         } else {
-            echo "not exist";
-            return new User(null, $username, $password, null);;
+            return new User(0, $username, $password, null);;
         }
     }
 
