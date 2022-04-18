@@ -2,6 +2,7 @@
     $cssLink = "../../assets/css/style.css";
     $indexLink = "../../index.php";
     $loginLink = "./login.php";
+    $loginName = "Login";
     $script = "../../assets/js/validation.js";
     include_once "../components/header.php"; 
 ?>

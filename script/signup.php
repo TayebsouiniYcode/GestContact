@@ -23,15 +23,15 @@
         if (empty($messages[0])){
             $user = new User(null, $_POST['username'], $_POST['password'], null);
             $user->signUp($_POST['username'], $_POST['password']);
-            // $_SESSION['user'] = clone $user;
-            $_SESSION['username'] = $user->getUsername();
-            $_SESSION['password'] = $user->getPassword();
-            $_SESSION['signUpDate'] = new DateTime();
-            $_SESSION['lastLoginDate'] = new DateTime();
-            // $_SESSION['user'] = serialize($user);
+            // $_SESSION['id'] = $user->getId();
+            // $_SESSION['username'] = $user->getUsername();
+            // $_SESSION['password'] = $user->getPassword();
+            // $_SESSION['signUpDate'] = new DateTime();
+            // $_SESSION['lastLoginDate'] = new DateTime();
+
         } else {
             //var_dump($messages);
         }
 
-        header("Location: ../view/account/profil.php");
+        header("Location: ../view/account/login.php");
     }

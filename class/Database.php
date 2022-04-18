@@ -23,6 +23,16 @@ class Database{
         }
     }
 
+    // public function __sleep()
+    // {
+    //     return array('connection');
+    // }
+
+    // public function __wakeup()
+    // {
+    //     $this->connection;
+    // }
+
     public function insert($table,$para=array()){
         $table_columns = implode(',', array_keys($para));
         $table_value = implode("','", $para);
@@ -46,16 +56,13 @@ class Database{
 
         $sql="UPDATE  $table SET " . implode(',', $args);
 
-        $sql .=" WHERE $id";
+        $sql .=" WHERE Id = $id";
 
         try{
             $this->connexion->query($sql);
-            echo "success update";
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
-
-        // $result = $this->mysqli->query($sql);
     }
 
 
