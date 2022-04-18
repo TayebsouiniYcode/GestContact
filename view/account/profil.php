@@ -25,7 +25,7 @@
             <button type="button" data-bs-toggle="modal" data-bs-target="#detailsModal" class="btn btn-secondary fw-bold w-100 mt-5">Details</button>
         </div>
         <div>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-secondary fw-bold w-100 mt-3">Edit</button>
+          <button type="button" disabled data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-secondary fw-bold w-100 mt-3">Edit</button>
         </div>
       </div>
     </div>
@@ -43,9 +43,9 @@
         <span class="d-block fs-3">Username</span>
         <span class="d-block fs-3"><?php echo $_SESSION['username']; ?></span>
         <span class="d-block fs-3">Sign up date</span>
-        <span class="d-block fs-3"><?php echo $_SESSION['signUpDate']->format('Y-m-d H:i:s') ?></span>
+        <span class="d-block fs-3"><?php echo $_SESSION['signupDate'] ?></span>
         <span class="d-block fs-3">Last login</span>
-        <span class="d-block fs-3"><?php echo $_SESSION['lastLoginDate']->format('Y-m-d H:i:s') ?></span>
+        <span class="d-block fs-3"><?php echo $_SESSION['lastLoginDate']->format('Y-m-d H:i:s'); ?></span>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>

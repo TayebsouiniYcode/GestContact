@@ -4,6 +4,11 @@
     $loginLink = "./view/account/login.php";
     $loginName = "Login";
     include_once "./view/components/header.php";
+
+    session_start();
+    if (isset($_SESSION['id'])){
+        header("Location: ./view/account/profil.php");
+    }
 ?>
 
 <main class="d-lg-flex flex-row-reverse mt-5 pt-xl-5 gap-5 vh-75 align-items-center">
