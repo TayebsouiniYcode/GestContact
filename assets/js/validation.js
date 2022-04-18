@@ -130,7 +130,7 @@ function editContactVerify() {
     editContactPhoneMsg.innerText = "";
     
     let editContactForm = document.forms['editContact'];
-    editContactForm['id'].value = 180;
+    // editContactForm['id'].value = 180;
     let name = editContactForm['name'].value;
     let phone = editContactForm['phone'].value;
     let email = editContactForm['email'].value;

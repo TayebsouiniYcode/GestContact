@@ -56,7 +56,7 @@ class Database{
 
         $sql="UPDATE  $table SET " . implode(',', $args);
 
-        $sql .=" WHERE $id";
+        $sql .=" WHERE Id = $id";
 
         try{
             $this->connexion->query($sql);

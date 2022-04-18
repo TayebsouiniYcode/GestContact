@@ -193,7 +193,7 @@
               Change contact details and press save
           </p>
             <form class="mt-4" action="../../script/editContact.php" method="POST" name="editContact" onsubmit="return editContactVerify()">
-                <input type="hidden" name="id" value="" id="editId"> 
+                <input type="hidden" name="id" id="editId"> 
                 <div class="form-group">
                     <label for="editName" class="form-label text-blue">Name</label>
                     <input type="text" name="name" id="editName" class="form-control modalInput" value="">
