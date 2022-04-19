@@ -7,7 +7,7 @@
         
         $user = new User(null, $_POST['username'], $_POST['password'], null);
         $user = clone $user->login($user->getUsername(), $user->getPassword());
-
+        
         if ($user->getId() == -1) {
             header("Location: ../view/account/login.php?msg=incorrect");
         } else if ($user->getId() == 0) {
