@@ -11,27 +11,7 @@
     session_start();
 
     $user = new User($_SESSION['id'], $_SESSION['username'], $_SESSION['password'], $_SESSION['signupDate']);
-
     $user->selectContact();
-    
-    // var_dump($user->getContactList());
-
-    
-
-
-    // var_dump($user);
-    // $c = new Contact(null, null, null, null, null, $user->getId());
-    // $data = $c->selectContact("*",$user->getId());
-    // for ($i = 0 ; $i < count($data); $i++){
-    //     $contact = new Contact($data[0]['Id'], $data[0]['Name'], $data[0]['Phone'], $data[0]['Email'], $data[0]['Address'], $user->getId());
-    //     $user->setContact($contact);
-    // }
-
-    // foreach($user->getContactList() as $c){
-    //     echo "<br>";
-    //     var_dump($c);
-    //     echo "<br>";
-    // }
 ?>
 
 <main class="mt-5 mt-lg-0 gap-5 vh-75 align-items-center">
@@ -59,22 +39,18 @@
             </button>
         </div>
         <table class="table table-striped align-middle mt-4">
-            <!-- <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                </tr>
-            </thead> -->
             <tbody>
+                <?php 
+                if (count($user->getContactList()) == 0) {
+                    echo "<h2 class='m-4'>no contact yet</h2>";
+                }
+                ?>
                 <?php foreach($user->getContactList() as $c) : ?>
                     <tr class="border-radius text-dark" >
                         <th class="border-0" >
                             <img data="<?php echo $c['Id'] . ',' . $c['Name'] . ',' . $c['Phone'] . ',' . $c['Email'] . ',' . $c['Address']; ?>" class="contacts"  src="../../assets/img/illustration/avatarOne.svg" alt="" width="50" data-bs-toggle="modal" data-bs-target="#detailsModal"  data-id="<?php echo $user->getId(); ?>">
                         </th>
                         <td class="w-md-100 border-0 ">
-                        <!-- <div class="d-flex justify-content-between align-items-center"> -->
                         <div class="row">
                             <div class="col-md-2">
                                 <h6 class="fs-5 fw-normal pt-3"><?php echo $c['Name']; ?></h6>
@@ -103,6 +79,7 @@
     </div>
 </main>
 
+<!-- Modal add -->
 <div class="modal" id="addModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -137,7 +114,6 @@
                 </div>
                 <div class="form-group mt-4 row">
                     <div class="modal-footer">
-                        <!-- <button type="submit"  class="btn btn-light btn-modal w-100 fw-bold" >Confirm</button> -->
                         <input type="submit" class="btn btn-light btn-modal w-100" name="confirm" value="Confirm">
                         <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
                     </div>
@@ -147,7 +123,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- detailsModal -->
 <div class="modal" id="detailsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -178,7 +153,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- edit modal -->
 <div class="modal" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -218,7 +192,6 @@
                     <div class="modal-footer">
                         <input type="submit"  class="btn btn-light btn-modal w-100" name="save" value="Save">
                         <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">Cancel</button>
-                        
                     </div>
                 </div>
             </form>
@@ -255,58 +228,4 @@
     </div>
   </div>
 </div>
-<!-- <div class="container mt-5">
-    <h1 class="tile">Contacts</h1>
-    <div class="contact-list mt-5">
-        <h2 class="sub-title">Contacts list:</h2>
-        <div class="list-item m-5 d-flex gap-5">
-            <h3 class="name h5">Alonzo Barber</h3>
-            <div class="email">alonzo@barber.com</div>
-            <div class="phone">06 07 18 96 71</div>
-            <div class="adress">N 1 rue Sebta Qu El mohammadi</div>
-            <div class="buttons">
-                <a href="">Edit</a>
-                <a href="">Delete</a>
-            </div>
-        </div>
-        <hr>
-        <div class="list-item m-5 d-flex gap-5">
-            <h3 class="name h5">Alonzo Barber</h3>
-            <div class="email">alonzo@barber.com</div>
-            <div class="phone">06 07 18 96 71</div>
-            <div class="adress">N 1 rue Sebta Qu El mohammadi</div>
-            <div class="buttons">
-                <a href="">Edit</a>
-                <a href="">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="add-contact">
-        <h2 class="add-contact">Add contact</h2>
-        <form action="">
-            <div class="form-group d-flex w-100 gap-4">
-                <div class="sub-group w-50">
-                    <label for="name" class="label-form">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter name">
-                </div>
-                <div class="sub-group w-50">
-                    <label for="phone" class="label-form">Phone</label>
-                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter phone">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="address" class="form-label">Adress</label>
-                <input type="text" name="address" id="address" class="form-control" placeholder="Enter address">
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary mt-4">
-            </div>
-        </form>
-    </div>
-</div> -->
-
 <?php include_once "../components/footer.php"; ?>

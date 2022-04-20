@@ -4,12 +4,7 @@
     $loginLink = "../../script/logout.php";
     $loginName = "Logout";
     include_once '../components/header.php';
-    session_start();
-
-    // var_dump($_SESSION);
-    // var_dump($_SESSION['signUpDate']->format('Y-m-d H:i:s'));
-    // var_dump($_SESSION['user']);
-    
+    session_start(); 
 ?>
 <main class="mt-5">
     <h1 class="title text-center fw-bolder">Welcome, <?php echo $_SESSION['username'];?>!</h1>
@@ -54,7 +49,6 @@
   </div>
 </div>
 
-
 <!-- edit Modal -->
 <div class="modal" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -82,14 +76,6 @@
               <input type="password" name="curentPassword" id="curentPassword" class="form-control modalInput fw-bold" placeholder="Password">
           </div>
           <div class="form-group mt-4 row">
-            <!-- <div class="modal-footer mt-2 col-12 row">
-              <div class="item col-6">
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">< Previous</button>
-              </div>
-              <div class="item col-5">
-                <input class="btn btn-modal" type="submit" value="confirm"> 
-              </div>
-            </div> -->
             <div class="modal-footer">
               <input class="btn btn-light btn-modal w-100 fw-bold" data-bs-dismiss="modal" type="submit" value="confirm"> 
               <button type="button" class="btn btn-light w-100 fw-bold" data-bs-dismiss="modal">Cancel</button>
@@ -101,24 +87,4 @@
     </div>
   </div>
 </div>
-<!-- <div class="container w-75 mt-5">
-    <h1 class="title">Welcome, Alex!</h1>
-
-    <div class="informations">
-        <h2 class="sub-title mt-5">Your profile:</h2>
-        <hr>
-        <p>
-            <em>Username</em> &emsp;&emsp;&emsp;&emsp;&emsp; Alex
-        </p>
-        <hr>
-        <p>
-            <em>Signup date</em> &emsp;&emsp;&emsp;&emsp;&emsp; Sun, 07 Apr 2019 16:11:25 +0000
-        </p>
-        <hr>
-        <p>
-            <em>Last login</em> &emsp;&emsp;&emsp;&emsp;&emsp; Mon, 08 Apr 2019 14:24:17 +0000
-        </p>
-    </div>
-</div> -->
-
 <?php include_once '../components/footer.php'; ?>

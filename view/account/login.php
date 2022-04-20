@@ -47,5 +47,4 @@ if (isset($_SESSION['id'])){
         </div>
     </form>
 </main>
-
 <?php include_once "../components/footer.php"; ?>
