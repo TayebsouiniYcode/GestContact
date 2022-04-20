@@ -113,14 +113,3 @@ class User extends Database {
         echo "Id : " . $this->id .  " username : ". $this->username . " password : " . $this->password . " Signup date : " . $this->signUpDate . " Last login date : " . $this->lastLoginDate; 
     }
 }
-
-// $user = new User(1, "Tayebsouini", "2423124", "14/01/2022");
-// $user->toString();
-// echo "<br>";
-// $user = clone $user->login('Ahmed', "232323");
-// echo "<br>";
-// echo "user final";
-// var_dump($user);
-// $u = clone $user->signUp('KT', "12345");
-// var_dump($u);
-

@@ -11,8 +11,8 @@ DROP TABLE IF EXISTS `contact`;
 CREATE TABLE IF NOT EXISTS `contact` (
   	`Id` int NOT NULL AUTO_INCREMENT,
   	`Name` varchar(20) NOT NULL,
-   	`Phone` varchar(30) NULL UNIQUE,
-    `Email` varchar(50) NOT NULL UNIQUE,
+   	`Phone` varchar(30) NULL,
+    `Email` varchar(50) NOT NULL,
     `Address` varchar(255) NULL, 
     `Id_User` int NOT NULL,
   PRIMARY KEY (`Id`),

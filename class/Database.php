@@ -4,7 +4,6 @@
 
 class Database{
 
-    // public $que;
     private $servername = "127.0.0.1";
     private $password = "";
     private $user = "root";
@@ -22,16 +21,6 @@ class Database{
             echo $e->getMessage();
         }
     }
-
-    // public function __sleep()
-    // {
-    //     return array('connection');
-    // }
-
-    // public function __wakeup()
-    // {
-    //     $this->connection;
-    // }
 
     public function insert($table,$para=array()){
         $table_columns = implode(',', array_keys($para));
@@ -65,7 +54,6 @@ class Database{
         }
     }
 
-
     public function delete($table,$id){
         $sql="DELETE FROM $table";
         $sql .=" WHERE $id ";
@@ -91,7 +79,6 @@ class Database{
         try{
             $this->result =  $this->connexion->query($sql);
             $this->data = $this->result->fetchAll();
-            // var_dump($this->sql);
             return $this->data;
         } catch (PDOException $e){
             echo $e->getMessage();
@@ -99,13 +86,3 @@ class Database{
     }
 
 }
-
-// $db = new Database();
-
-// $db->select("user","*");
-// $db->delete('user',"id=1");
-// $db->update('user',['Username'=>"Khalid",'Password'=>"2423532"],"id=1");
-// $db->insert('user',['Username'=>"Ahmed",'Password'=>"232323",'SignUpDate'=>"02/02/2022"]);
-
-
-

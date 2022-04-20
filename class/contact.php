@@ -2,7 +2,6 @@
 
 require_once 'Database.php';
 
-
 class Contact extends Database{
     private $id;
     private $name;
@@ -60,7 +59,6 @@ class Contact extends Database{
 
     public function addContact(){
         try {
-            // $this->insert('contact', ['Name'=>$c->name, 'Phone'=>$c->phone, "Email" => $c->email, "Address" => $c->address]);
             $id = $this->insert('contact', ['Name'=>$this->name, 'Phone'=>$this->phone, "Email" => $this->email, "Address" => $this->address, "Id_User" => $this->fk_user]);
             if ($id) 
                 echo "success id = " . $id;
@@ -79,18 +77,9 @@ class Contact extends Database{
         $this->update("contact", ['Name'=>$this->name, "Phone"=> $this->phone, "Email"=> $this->email, "Address" => $this->address], $this->id);
     }
 
-    // $db->select("user","*");
     public function selectContact($cols, ?string $fk_user){
         $where = "Id_User = " . $fk_user;
         $data = $this->select("contact", $cols, $where);
         return $data;
     }
 }
-
-// $c = new Contact (null, 'Ahmed', '0607233671', "Tayebsouini.2@gmail.com", "N1 rue sebta Qu EL Mohammadi");
-// $c->addContact();
-
-
-// $c = new Contact();
-// $constraint = "Id = " . 7;
-// $c->deleteContact("contact", $constraint);
